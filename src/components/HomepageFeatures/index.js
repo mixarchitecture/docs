@@ -34,7 +34,7 @@ function TextFeature({ title, description }) {
   );
 }
 
-export default function HomepageFeatures({ lang = en }) {
+export default function HomepageFeatures({ lang = "en" }) {
   return (
     <section className={styles.features}>
       <div className="container">
