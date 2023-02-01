@@ -126,6 +126,10 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/mixarchitecture/arch',
               },
+              {
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/company/mixarchitecture/"
+              }
             ],
           },
         ],
