@@ -5,6 +5,7 @@ import Layout from '@theme/Layout';
 import clsx from 'clsx';
 import React from 'react';
 
+import Translate, { translate } from '@docusaurus/Translate';
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -13,12 +14,15 @@ function HomepageHeader() {
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">{translate({id: "layout.tagline"})}</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-           Start Now &rarr;
+              <Translate
+                id="home.getStarted"
+              ></Translate>
+               &rarr;
           </Link>
         </div>
       </div>
@@ -30,8 +34,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Blend the best patterns and architectural solutions, be the best of the best!">
+      title={translate({id: "layout.title"}, {title: siteConfig.title})}
+      description={translate({id: "layout.description"})}>
       <HomepageHeader />
       <main>
         <HomepageFeatures />
