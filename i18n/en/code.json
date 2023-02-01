@@ -1,0 +1,71 @@
+{
+    "home.getStarted": {
+        "message": "Start Now"
+    },
+    "layout.title": {
+        "message": "Hello from {title}"
+    },
+    "layout.description": {
+        "message": "Blend the best patterns and architectural solutions, be the best of the best!"
+    },
+    "layout.tagline": {
+        "message": "Be the best of the best"
+    },
+    "features.decompose.title": {
+        "message": "Decompose, Decompose thoroughly!"
+    },
+    "features.decompose.description": {
+        "message": "Mix Architecture is a modular architecture. It is a modular architecture that is easy to understand and easy to maintain."
+    },
+    "features.researched.title": {
+        "message": "Researched, The Best!"
+    },
+    "features.researched.description": {
+        "message": "Mix Architecture is a blend of the best patterns and architectural solutions. It is the best of the best. Moreover language independent!"
+    },
+    "features.test.title": {
+        "message": "Test, Test, Test..."
+    },
+    "features.test.description": {
+        "message": "Mix Architecture makes your application independent with the architectures it uses. In this way, an easily testable structure is formed."
+    },
+    "features.frontend.title": {
+      "message": "Frontend Supported"
+    },
+    "features.frontend.description": {
+      "message": "Mix Architecture is frontend supported. It offers architectural and pattern-based solutions suitable for the frontend area."
+    },
+    "features.open-source.title": {
+      "message": "Open Source"
+    },
+    "features.open-source.description": {
+      "message": "Mix Architecture is open source. You can report the wrong places, express your wishes, ask questions to the community or use it for free."
+    },
+    "features.real-usecase.title": {
+      "message": "Real Use Cases"
+    },
+    "features.real-usecase.description": {
+      "message": "Mix Architecture is have real use cases. You can see the real use cases of Mix Architecture in the Examples section or you can request an example of your choice."
+    },
+    "features.undepent-lang.title": {
+      "message": "Language Independent"
+    },
+    "features.undepent-lang.description": {
+      "message": "Mix Architecture is language independent. You can use it in any language you want. It is not limited to a specific language."
+    },
+    "features.control.title": {
+      "message": "You Are in Control"
+    },
+    "features.control.description": {
+      "message": "Mix Architecture ensures that frameworks work for you, not you for frameworks. You are in control of the frameworks you use."
+    },
+    "features.whatever.title": {
+      "message": "Whatever You Want"
+    },
+    "features.whatever.description": {
+      "message": "Mix Architecture prevents a packet, protocol or anything from interfering with your logic and parses it. You can even use many of them at the same time."
+    },
+    "features.title.title": {
+      "message": "Key Features"
+    }
+}
