@@ -110,11 +110,11 @@ const config = {
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/mixarchitecture',
+                href: 'https://discord.gg/juUrdxEZv9',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/mixarchitecture',
+                href: 'https://twitter.com/mix_arch',
               },
             ],
           },
