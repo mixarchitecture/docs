@@ -1,39 +1,87 @@
-import React from 'react';
 import clsx from 'clsx';
+import React from 'react';
 import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Decompose, Decompose thoroughly!',
+    Svg: require('@site/static/img/1.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Mix Architecture is a modular architecture. It is a modular architecture that is easy to understand and easy to maintain.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Researched, The Best!',
+    Svg: require('@site/static/img/2.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Mix Architecture is a blend of the best patterns and architectural solutions. It is the best of the best. Moreover language independent!
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Test, Test, Test...',
+    Svg: require('@site/static/img/4.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Mix Architecture makes your application independent with the architectures it uses. In this way, an easily testable structure is formed.
       </>
     ),
   },
 ];
+
+const TextFeatureList = [
+  {
+    title: 'Frontend Supported',
+    description: (
+      <>
+        Mix Architecture is frontend supported. It offers architectural and pattern-based solutions suitable for the frontend area.
+      </>
+    ),
+  },
+  {
+    title: 'Open Source',
+    description: (
+      <>
+        Mix Architecture is open source. You can report the wrong places, express your wishes, ask questions to the community or use it for free.
+      </>
+    ),
+  },
+  {
+    title: 'Real Use Cases',
+    description: (
+      <>
+        Mix Architecture is have real use cases. You can see the real use cases of Mix Architecture in the Examples section or you can request an example of your choice.
+      </>
+    ),
+  },
+  {
+    title: 'Language Independent',
+    description: (
+      <>
+        Mix Architecture is language independent. You can use it in any language you want. It is not limited to a specific language.
+      </>
+    ),
+  },
+  {
+    title: 'You Are in Control',
+    description: (
+      <>
+      Mix Architecture ensures that frameworks work for you, not you for frameworks. You are in control of the frameworks you use.
+      </>
+    ),
+  },
+  {
+    title: 'Whatever You Want',
+    description: (
+      <>
+      Mix Architecture prevents a packet, protocol or anything from interfering with your logic and parses it. You can even use many of them at the same time.
+      </>
+    ),
+  }
+]
 
 function Feature({Svg, title, description}) {
   return (
@@ -49,6 +97,17 @@ function Feature({Svg, title, description}) {
   );
 }
 
+function TextFeature({title, description}) {
+  return (
+    <div className={clsx('col col--4', styles.textFeature)}>
+      <div className="text--center">
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
+    </div>
+  );
+}
+
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
@@ -56,6 +115,13 @@ export default function HomepageFeatures() {
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
+          ))}
+        </div>
+        <div className={styles.divider}></div>
+        <div className='row'>
+          <div className={clsx('col col--12', styles.title)}><h2 className='text--center'>Key Features</h2></div>
+          {TextFeatureList.map((props, idx) => (
+            <TextFeature key={idx} {...props} />
           ))}
         </div>
       </div>
