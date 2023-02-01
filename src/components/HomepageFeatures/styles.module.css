@@ -9,3 +9,21 @@
   height: 200px;
   width: 200px;
 }
+
+.divider {
+  height: 1px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(0, 0, 0, 0.3);
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.textFeature {
+  margin-bottom: 2rem;
+}

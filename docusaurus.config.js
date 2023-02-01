@@ -72,13 +72,6 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
             position: 'right',
             type: 'localeDropdown'
           },
@@ -110,21 +103,17 @@ const config = {
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/mixarchitecture',
+                href: 'https://discord.gg/juUrdxEZv9',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/mixarchitecture',
+                href: 'https://twitter.com/mix_arch',
               },
             ],
           },
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/mixarchitecture/arch',
@@ -139,6 +128,36 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+    plugins: [
+      [
+        '@docusaurus/plugin-pwa',
+        {
+          debug: true,
+          offlineModeActivationStrategies: [
+            'appInstalled',
+            'standalone',
+            'queryString',
+          ],
+          pwaHead: [
+            {
+              tagName: 'link',
+              rel: 'icon',
+              href: '/img/logo.png',
+            },
+            {
+              tagName: 'link',
+              rel: 'manifest',
+              href: '/manifest.webmanifest', // your PWA manifest
+            },
+            {
+              tagName: 'meta',
+              name: 'theme-color',
+              content: '#003F8C',
+            },
+          ],
+        },
+      ]
+    ]
 };
 
 module.exports = config;
