@@ -1,0 +1,11 @@
+{
+  "position": 3,
+  "label": "Desenler",
+  "collapsible": true,
+  "collapsed": false,
+  "className": "red",
+  "link": {
+    "type": "generated-index",
+    "title": "Tasarım Desenleri"
+  }
+}
