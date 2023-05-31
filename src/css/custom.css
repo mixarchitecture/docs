@@ -120,3 +120,22 @@
 .theme-doc-sidebar-item-category-level-2.theme-doc-sidebar-item-category:not(.menu__list-item--collapsed) ul::before {
   background-color: #d5d5d5 !important;
 }
+
+.main-wrapper main {
+  min-height: calc(100vh - var(--ifm-navbar-height));
+}
+
+.main-wrapper main > div.container > div {
+  height: 100%;
+}
+
+
+article {
+  flex-grow: 1;
+}
+
+.main-wrapper main > div.container div:has(> article) {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
